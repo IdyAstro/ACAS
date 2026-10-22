@@ -1,21 +1,132 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>À propos | ACAS Mali</title><meta name="description" content="Découvrez l’Association des Conseillers Agricoles du Sahel, son histoire, sa mission et ses engagements."><meta name="theme-color" content="#174d3a">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://commons.wikimedia.org">
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/main.js" defer></script></head><body>
-<div id="header-slot"></div>
-<main>
-<section class="page-hero"><div class="container page-hero-grid"><div><div class="breadcrumb"><a href="index.html">Accueil</a> / À propos</div><span class="eyebrow">Qui sommes-nous ?</span><h1>Une association au service du monde rural.</h1><p class="lead">L’Association des Conseillers Agricoles du Sahel (ACAS) est une organisation malienne de développement dont l’action vise à renforcer les capacités des acteurs locaux et les moyens d’existence des communautés.</p></div><div class="page-hero-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeunes%20du%20village%20aidant%20une%20famille%20pour%20la%20moisson%20du%20fonio%20%28Mali%29%201.jpg?width=1100" alt="Communauté réunie autour d'un projet de développement"></div></div></section>
-<section class="section"><div class="container split"><div><span class="eyebrow reveal">Notre histoire</span><h2 class="reveal">Un ancrage historique dans le développement rural.</h2><p class="lead reveal">Les annuaires consultés indiquent une création en 1994 et un siège à Gao. Au fil des années, l’ACAS a été associée à des initiatives liées à l’agriculture, à l’eau, à l’éducation, aux infrastructures rurales et à la résilience économique.</p><p class="muted reveal" style="line-height:1.8">Les informations de cette présentation sont basées sur des répertoires publics. Elles doivent être validées et complétées par l’organisation avant toute publication officielle.</p></div><div class="split-image reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Culture%20mara%C3%AEch%C3%A8re%20-%20Mali.jpeg?width=1100" alt="Paysage rural du Sahel" loading="lazy" decoding="async"></div></div></section>
-<section class="section soft-bg"><div class="container"><div class="section-head"><div><span class="eyebrow reveal">Notre raison d’agir</span><h2 class="reveal">Une vision fondée sur l’autonomie et la durabilité.</h2></div><p class="reveal">L’ACAS entend contribuer à l’épanouissement du monde rural en associant les populations aux décisions qui concernent leur développement.</p></div><div class="value-grid"><article class="value-card reveal"><div class="icon-bubble">◎</div><h3>Notre mission</h3><p>Accompagner les acteurs locaux dans la planification et la réalisation d’initiatives de développement agro-sylvo-pastoral et communautaire.</p></article><article class="value-card reveal"><div class="icon-bubble">↗</div><h3>Notre ambition</h3><p>Contribuer à des communautés rurales plus autonomes, capables de développer leurs activités et de mieux faire face aux chocs.</p></article><article class="value-card reveal"><div class="icon-bubble">♧</div><h3>Nos principes</h3><p>Participation locale, renforcement des capacités, amélioration des moyens d’existence et préservation des écosystèmes.</p></article></div></div></section>
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow reveal">Nos engagements</span><h2 class="reveal">Comment nous souhaitons contribuer.</h2></div></div><div class="cards-3"><article class="card reveal"><div class="card-body"><div class="icon-bubble">✳</div><h3>Responsabilisation</h3><p>Encourager la participation des producteurs, des associations locales et des communautés aux décisions et à la gestion des initiatives.</p></div></article><article class="card reveal"><div class="card-body"><div class="icon-bubble">⌁</div><h3>Opportunités économiques</h3><p>Favoriser les activités génératrices de revenus et les compétences qui soutiennent les moyens d’existence.</p></div></article><article class="card reveal"><div class="card-body"><div class="icon-bubble">♧</div><h3>Équilibre écologique</h3><p>Intégrer la gestion durable des ressources naturelles dans les actions de développement rural.</p></div></article></div></div></section>
-<section class="section-sm"><div class="container"><div class="notice">À compléter par l’ACAS avant mise en ligne : mot de la direction, organigramme, équipe actuelle, statut juridique actualisé, stratégie pluriannuelle et rapports d’activités récents.</div></div></section>
-</main>
-<div id="footer-slot"></div>
-<script>
-(async()=>{try{const [h,f]=await Promise.all([fetch('components/header.html'),fetch('components/footer.html')]);document.getElementById('header-slot').innerHTML=await h.text();document.getElementById('footer-slot').innerHTML=await f.text();if(window.initACAS)window.initACAS();}catch(e){console.warn('Pour visualiser les composants communs, lancer le site via un serveur HTTP local.');}})();
-</script>
-</body></html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>À propos | ACAS Mali</title>
+    <meta name="description"
+        content="Découvrez l’Association des Conseillers Agricoles du Sahel, son histoire, sa mission et ses engagements.">
+    <meta name="theme-color" content="#174d3a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://commons.wikimedia.org">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="header-slot"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-grid">
+                <div>
+                    <div class="breadcrumb"><a href="index.html">Accueil</a> / À propos</div><span class="eyebrow">Qui
+                        sommes-nous ?</span>
+                    <h1>Une association au service du monde rural.</h1>
+                    <p class="lead">L’Association des Conseillers Agricoles du Sahel (ACAS) est une organisation
+                        malienne de développement dont l’action vise à renforcer les capacités des acteurs locaux et les
+                        moyens d’existence des communautés.</p>
+                </div>
+                <div class="page-hero-image"><img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeunes%20du%20village%20aidant%20une%20famille%20pour%20la%20moisson%20du%20fonio%20%28Mali%29%201.jpg?width=1100"
+                        alt="Communauté réunie autour d'un projet de développement"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container split">
+                <div><span class="eyebrow reveal">Notre histoire</span>
+                    <h2 class="reveal">Un ancrage historique dans le développement rural.</h2>
+                    <p class="lead reveal">Les annuaires consultés indiquent une création en 1994 et un siège à Gao. Au
+                        fil des années, l’ACAS a été associée à des initiatives liées à l’agriculture, à l’eau, à
+                        l’éducation, aux infrastructures rurales et à la résilience économique.</p>
+                    <p class="muted reveal" style="line-height:1.8">Les informations de cette présentation sont basées
+                        sur des répertoires publics. Elles doivent être validées et complétées par l’organisation avant
+                        toute publication officielle.</p>
+                </div>
+                <div class="split-image reveal"><img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Culture%20mara%C3%AEch%C3%A8re%20-%20Mali.jpeg?width=1100"
+                        alt="Paysage rural du Sahel" loading="lazy" decoding="async"></div>
+            </div>
+        </section>
+        <section class="section soft-bg">
+            <div class="container">
+                <div class="section-head">
+                    <div><span class="eyebrow reveal">Notre raison d’agir</span>
+                        <h2 class="reveal">Une vision fondée sur l’autonomie et la durabilité.</h2>
+                    </div>
+                    <p class="reveal">L’ACAS entend contribuer à l’épanouissement du monde rural en associant les
+                        populations aux décisions qui concernent leur développement.</p>
+                </div>
+                <div class="value-grid">
+                    <article class="value-card reveal">
+                        <div class="icon-bubble">◎</div>
+                        <h3>Notre mission</h3>
+                        <p>Accompagner les acteurs locaux dans la planification et la réalisation d’initiatives de
+                            développement agro-sylvo-pastoral et communautaire.</p>
+                    </article>
+                    <article class="value-card reveal">
+                        <div class="icon-bubble">↗</div>
+                        <h3>Notre ambition</h3>
+                        <p>Contribuer à des communautés rurales plus autonomes, capables de développer leurs activités
+                            et de mieux faire face aux chocs.</p>
+                    </article>
+                    <article class="value-card reveal">
+                        <div class="icon-bubble">♧</div>
+                        <h3>Nos principes</h3>
+                        <p>Participation locale, renforcement des capacités, amélioration des moyens d’existence et
+                            préservation des écosystèmes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div><span class="eyebrow reveal">Nos engagements</span>
+                        <h2 class="reveal">Comment nous souhaitons contribuer.</h2>
+                    </div>
+                </div>
+                <div class="cards-3">
+                    <article class="card reveal">
+                        <div class="card-body">
+                            <div class="icon-bubble">✳</div>
+                            <h3>Responsabilisation</h3>
+                            <p>Encourager la participation des producteurs, des associations locales et des communautés
+                                aux décisions et à la gestion des initiatives.</p>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-body">
+                            <div class="icon-bubble">⌁</div>
+                            <h3>Opportunités économiques</h3>
+                            <p>Favoriser les activités génératrices de revenus et les compétences qui soutiennent les
+                                moyens d’existence.</p>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-body">
+                            <div class="icon-bubble">♧</div>
+                            <h3>Équilibre écologique</h3>
+                            <p>Intégrer la gestion durable des ressources naturelles dans les actions de développement
+                                rural.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section-sm">
+            <div class="container">
+
+            </div>
+        </section>
+    </main>
+    <div id="footer-slot"></div>
+    <script>
+        (async () => { try { const [h, f] = await Promise.all([fetch('components/header.html'), fetch('components/footer.html')]); document.getElementById('header-slot').innerHTML = await h.text(); document.getElementById('footer-slot').innerHTML = await f.text(); if (window.initACAS) window.initACAS(); } catch (e) { console.warn('Pour visualiser les composants communs, lancer le site via un serveur HTTP local.'); } })();
+    </script>
+</body>
+
+</html>

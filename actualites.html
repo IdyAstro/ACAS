@@ -1,23 +1,93 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Actualités | ACAS Mali</title><meta name="description" content="Références historiques et espace d’actualités de l’ACAS Mali."><meta name="theme-color" content="#174d3a">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://commons.wikimedia.org">
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/main.js" defer></script></head><body>
-<div id="header-slot"></div>
-<main>
-<section class="page-hero"><div class="container page-hero-grid"><div><div class="breadcrumb"><a href="index.html">Accueil</a> / Actualités</div><span class="eyebrow">Vie de l’organisation</span><h1>Actualités, terrain et ressources.</h1><p class="lead">Un espace destiné à partager les nouvelles validées de l’ACAS, les activités de terrain, les publications et les opportunités de partenariat.</p></div><div class="page-hero-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Culture%20mara%C3%AEch%C3%A8re%20-%20Mali.jpeg?width=1100" alt="Champ cultivé dans une zone rurale"></div></div></section>
-<section class="section"><div class="container"><div class="notice" style="margin-bottom:30px"><strong>Important :</strong> les cartes ci-dessous présentent des références historiques connues, pas des annonces d’activités récentes. Remplacer ou compléter ces contenus par des actualités datées et validées par l’ACAS avant la publication du site.</div><div class="news-grid">
-<article class="card news-card reveal"><div class="card-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2016.07-443-292ap%20sorghum%2Csowing%20Nintabougoro%20vlge%28Nafanga%20Cmn.%2CKoutiala%20Crc.%2CSikasso%20Rgn%29%2CML%20thu21jul2016-1012h.jpg?width=1100" alt="Semis et jeunes plants" loading="lazy" decoding="async"></div><div class="card-body"><span class="news-date">Référence · 2025</span><h3>Appui aux producteurs maraîchers à Ansongo</h3><p>Une fiche publique rapporte une distribution de semences maraîchères et des actions de sensibilisation aux bonnes pratiques agricoles.</p><a class="card-link" href="projets.html">Consulter la référence →</a></div></article>
-<article class="card news-card reveal"><div class="card-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mali%20ricefarmers.jpg?width=1100" alt="Gestion de l'eau" loading="lazy" decoding="async"></div><div class="card-body"><span class="news-date">Archive · 2014–2015</span><h3>Gestion de l’eau et sécurité alimentaire</h3><p>Une réalisation historique mentionne une digue, des périmètres maraîchers pilotes et un accompagnement des comités de gestion.</p><a class="card-link" href="projets.html">Consulter la référence →</a></div></article>
-<article class="card news-card reveal"><div class="card-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Photo%20de%20formation%20059%20%285348432863%29.jpg?width=1100" alt="Éducation et apprentissage" loading="lazy" decoding="async"></div><div class="card-body"><span class="news-date">Archive · 2014</span><h3>Appui à des écoles dans le cercle de Bourem</h3><p>Les annuaires publics citent un appui à cinq écoles. Les détails de cette intervention sont à documenter à partir des archives originales.</p><a class="card-link" href="projets.html">Consulter la référence →</a></div></article>
-</div></div></section>
-<section class="section-sm"><div class="container"><div class="cta-band reveal"><div><span class="eyebrow">Une actualité à partager ?</span><h2>Contribuez à raconter les actions de terrain.</h2><p>Les contenus publiés doivent être datés, vérifiés et validés par l’équipe de l’ACAS.</p></div><a class="btn btn-primary" href="contact.html">Envoyer une information ↗</a></div></div></section>
-</main>
-<div id="footer-slot"></div>
-<script>
-(async()=>{try{const [h,f]=await Promise.all([fetch('components/header.html'),fetch('components/footer.html')]);document.getElementById('header-slot').innerHTML=await h.text();document.getElementById('footer-slot').innerHTML=await f.text();if(window.initACAS)window.initACAS();}catch(e){console.warn('Pour visualiser les composants communs, lancer le site via un serveur HTTP local.');}})();
-</script>
-</body></html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actualités | ACAS Mali</title>
+    <meta name="description" content="Références historiques et espace d’actualités de l’ACAS Mali.">
+    <meta name="theme-color" content="#174d3a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://commons.wikimedia.org">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="header-slot"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-grid">
+                <div>
+                    <div class="breadcrumb"><a href="index.html">Accueil</a> / Actualités</div><span class="eyebrow">Vie
+                        de l’organisation</span>
+                    <h1>Actualités, terrain et ressources.</h1>
+                    <p class="lead">Un espace destiné à partager les nouvelles validées de l’ACAS, les activités de
+                        terrain, les publications et les opportunités de partenariat.</p>
+                </div>
+                <div class="page-hero-image"><img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Culture%20mara%C3%AEch%C3%A8re%20-%20Mali.jpeg?width=1100"
+                        alt="Champ cultivé dans une zone rurale"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+
+                <div class="news-grid">
+                    <article class="card news-card reveal">
+                        <div class="card-image"><img
+                                src="https://commons.wikimedia.org/wiki/Special:FilePath/2016.07-443-292ap%20sorghum%2Csowing%20Nintabougoro%20vlge%28Nafanga%20Cmn.%2CKoutiala%20Crc.%2CSikasso%20Rgn%29%2CML%20thu21jul2016-1012h.jpg?width=1100"
+                                alt="Semis et jeunes plants" loading="lazy" decoding="async"></div>
+                        <div class="card-body"><span class="news-date">Référence · 2025</span>
+                            <h3>Appui aux producteurs maraîchers à Ansongo</h3>
+                            <p>Une fiche publique rapporte une distribution de semences maraîchères et des actions de
+                                sensibilisation aux bonnes pratiques agricoles.</p><a class="card-link"
+                                href="projets.html">Consulter la référence →</a>
+                        </div>
+                    </article>
+                    <article class="card news-card reveal">
+                        <div class="card-image"><img
+                                src="https://commons.wikimedia.org/wiki/Special:FilePath/Mali%20ricefarmers.jpg?width=1100"
+                                alt="Gestion de l'eau" loading="lazy" decoding="async"></div>
+                        <div class="card-body"><span class="news-date">Archive · 2014–2015</span>
+                            <h3>Gestion de l’eau et sécurité alimentaire</h3>
+                            <p>Une réalisation historique mentionne une digue, des périmètres maraîchers pilotes et un
+                                accompagnement des comités de gestion.</p><a class="card-link"
+                                href="projets.html">Consulter la référence →</a>
+                        </div>
+                    </article>
+                    <article class="card news-card reveal">
+                        <div class="card-image"><img
+                                src="https://commons.wikimedia.org/wiki/Special:FilePath/Photo%20de%20formation%20059%20%285348432863%29.jpg?width=1100"
+                                alt="Éducation et apprentissage" loading="lazy" decoding="async"></div>
+                        <div class="card-body"><span class="news-date">Archive · 2014</span>
+                            <h3>Appui à des écoles dans le cercle de Bourem</h3>
+                            <p>Les annuaires publics citent un appui à cinq écoles. Les détails de cette intervention
+                                sont à documenter à partir des archives originales.</p><a class="card-link"
+                                href="projets.html">Consulter la référence →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section-sm">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div><span class="eyebrow">Une actualité à partager ?</span>
+                        <h2>Contribuez à raconter les actions de terrain.</h2>
+                        <p>Les contenus publiés doivent être datés, vérifiés et validés par l’équipe de l’ACAS.</p>
+                    </div><a class="btn btn-primary" href="contact.html">Envoyer une information ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-slot"></div>
+    <script>
+        (async () => { try { const [h, f] = await Promise.all([fetch('components/header.html'), fetch('components/footer.html')]); document.getElementById('header-slot').innerHTML = await h.text(); document.getElementById('footer-slot').innerHTML = await f.text(); if (window.initACAS) window.initACAS(); } catch (e) { console.warn('Pour visualiser les composants communs, lancer le site via un serveur HTTP local.'); } })();
+    </script>
+</body>
+
+</html>

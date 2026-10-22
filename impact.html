@@ -1,20 +1,109 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impact et résultats | ACAS Mali</title><meta name="description" content="Données historiques, indicateurs de suivi et transparence sur les projets de l’ACAS Mali."><meta name="theme-color" content="#174d3a">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://commons.wikimedia.org">
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/main.js" defer></script></head><body>
-<div id="header-slot"></div>
-<main>
-<section class="page-hero"><div class="container page-hero-grid"><div><div class="breadcrumb"><a href="index.html">Accueil</a> / Impact</div><span class="eyebrow">Résultats & transparence</span><h1>Rendre visibles les changements sur le terrain.</h1><p class="lead">L’impact durable se mesure à travers les résultats, les capacités renforcées et l’évolution des conditions de vie. Cette page propose un cadre pour documenter ces résultats avec rigueur.</p></div><div class="page-hero-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeunes%20du%20village%20aidant%20une%20famille%20pour%20la%20moisson%20du%20fonio%20%28Mali%29%201.jpg?width=1100" alt="Participation communautaire"></div></div></section>
-<section class="impact-band"><div class="container impact-grid"><div><span class="eyebrow" style="color:#dce9dd">Repères historiques</span><h2>Quelques données rapportées.</h2><p>Les chiffres sont issus de fiches publiques secondaires et ne constituent pas une évaluation indépendante.</p></div><div class="impact-number"><strong>1994</strong><span>Année de création indiquée dans l’annuaire</span></div><div class="impact-number"><strong>400 m</strong><span>Longueur de digue mentionnée dans une réalisation 2014–2015</span></div><div class="impact-number"><strong>115 000</strong><span>Bénéficiaires indirects annoncés dans une fiche de programme 2023–2024</span></div></div></section>
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow reveal">Notre approche de suivi</span><h2 class="reveal">Des résultats mesurables et vérifiables.</h2></div><p class="reveal">Pour rendre compte des effets des projets, il est essentiel de relier chaque activité à des indicateurs, des preuves et des retours des bénéficiaires.</p></div><div class="value-grid"><article class="value-card reveal"><div class="icon-bubble">▤</div><h3>Suivi des activités</h3><p>Dates, localités, activités réalisées, ressources mobilisées et statut de mise en œuvre.</p></article><article class="value-card reveal"><div class="icon-bubble">↗</div><h3>Indicateurs de résultats</h3><p>Productivité, accès aux ressources, capacités renforcées, emplois ou revenus, selon le cadre logique de chaque projet.</p></article><article class="value-card reveal"><div class="icon-bubble">◎</div><h3>Retours communautaires</h3><p>Participation, satisfaction, difficultés rencontrées et enseignements pour améliorer les prochaines interventions.</p></article></div></div></section>
-<section class="section soft-bg"><div class="container split"><div><span class="eyebrow reveal">Cadre de redevabilité</span><h2 class="reveal">Des preuves plutôt que des promesses.</h2><p class="lead reveal">Les informations de cette page seront renforcées dès que l’ACAS disposera de rapports validés, de données de référence et d’évaluations récentes à publier.</p><div class="check-list reveal"><div><span class="check">✓</span><span>Publier des rapports annuels validés.</span></div><div><span class="check">✓</span><span>Présenter les résultats avec leurs périodes et leurs zones d’intervention.</span></div><div><span class="check">✓</span><span>Protéger les données personnelles des bénéficiaires.</span></div></div></div><div class="split-image reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Culture%20mara%C3%AEch%C3%A8re%20-%20Mali.jpeg?width=1100" alt="Paysage de campagne" loading="lazy" decoding="async"></div></div></section>
-</main>
-<div id="footer-slot"></div>
-<script>
-(async()=>{try{const [h,f]=await Promise.all([fetch('components/header.html'),fetch('components/footer.html')]);document.getElementById('header-slot').innerHTML=await h.text();document.getElementById('footer-slot').innerHTML=await f.text();if(window.initACAS)window.initACAS();}catch(e){console.warn('Pour visualiser les composants communs, lancer le site via un serveur HTTP local.');}})();
-</script>
-</body></html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Impact et résultats | ACAS Mali</title>
+    <meta name="description"
+        content="Données historiques, indicateurs de suivi et transparence sur les projets de l’ACAS Mali.">
+    <meta name="theme-color" content="#174d3a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://commons.wikimedia.org">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="header-slot"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-grid">
+                <div>
+                    <div class="breadcrumb"><a href="index.html">Accueil</a> / Impact</div><span
+                        class="eyebrow">Résultats & transparence</span>
+                    <h1>Rendre visibles les changements sur le terrain.</h1>
+                    <p class="lead">L’impact durable se mesure à travers les résultats, les capacités renforcées et
+                        l’évolution des conditions de vie. Cette page propose un cadre pour documenter ces résultats
+                        avec rigueur.</p>
+                </div>
+                <div class="page-hero-image"><img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeunes%20du%20village%20aidant%20une%20famille%20pour%20la%20moisson%20du%20fonio%20%28Mali%29%201.jpg?width=1100"
+                        alt="Participation communautaire"></div>
+            </div>
+        </section>
+        <section class="impact-band">
+            <div class="container impact-grid">
+                <div><span class="eyebrow" style="color:#dce9dd">Repères historiques</span>
+                    <h2>Quelques données rapportées.</h2>
+                    <p>Les chiffres sont issus de fiches publiques secondaires et ne constituent pas une évaluation
+                        indépendante.</p>
+                </div>
+                <div class="impact-number"><strong>1994</strong><span>Année de création indiquée dans l’annuaire</span>
+                </div>
+                <div class="impact-number"><strong>400 m</strong><span>Longueur de digue mentionnée dans une réalisation
+                        2014–2015</span></div>
+                <div class="impact-number"><strong>115 000</strong><span>Bénéficiaires indirects annoncés dans une fiche
+                        de programme 2023–2024</span></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div><span class="eyebrow reveal">Notre approche de suivi</span>
+                        <h2 class="reveal">Des résultats mesurables et vérifiables.</h2>
+                    </div>
+                    <p class="reveal">Pour rendre compte des effets des projets, il est essentiel de relier chaque
+                        activité à des indicateurs, des preuves et des retours des bénéficiaires.</p>
+                </div>
+                <div class="value-grid">
+                    <article class="value-card reveal">
+                        <div class="icon-bubble">▤</div>
+                        <h3>Suivi des activités</h3>
+                        <p>Dates, localités, activités réalisées, ressources mobilisées et statut de mise en œuvre.</p>
+                    </article>
+                    <article class="value-card reveal">
+                        <div class="icon-bubble">↗</div>
+                        <h3>Indicateurs de résultats</h3>
+                        <p>Productivité, accès aux ressources, capacités renforcées, emplois ou revenus, selon le cadre
+                            logique de chaque projet.</p>
+                    </article>
+                    <article class="value-card reveal">
+                        <div class="icon-bubble">◎</div>
+                        <h3>Retours communautaires</h3>
+                        <p>Participation, satisfaction, difficultés rencontrées et enseignements pour améliorer les
+                            prochaines interventions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section soft-bg">
+            <div class="container split">
+                <div><span class="eyebrow reveal">Cadre de redevabilité</span>
+                    <h2 class="reveal">Des preuves plutôt que des promesses.</h2>
+                    <p class="lead reveal">Les informations de cette page seront renforcées dès que l’ACAS disposera de
+                        rapports validés, de données de référence et d’évaluations récentes à publier.</p>
+                    <div class="check-list reveal">
+                        <div><span class="check">✓</span><span>Publier des rapports annuels validés.</span></div>
+                        <div><span class="check">✓</span><span>Présenter les résultats avec leurs périodes et leurs
+                                zones d’intervention.</span></div>
+                        <div><span class="check">✓</span><span>Protéger les données personnelles des
+                                bénéficiaires.</span></div>
+                    </div>
+                </div>
+                <div class="split-image reveal"><img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Culture%20mara%C3%AEch%C3%A8re%20-%20Mali.jpeg?width=1100"
+                        alt="Paysage de campagne" loading="lazy" decoding="async"></div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-slot"></div>
+    <script>
+        (async () => { try { const [h, f] = await Promise.all([fetch('components/header.html'), fetch('components/footer.html')]); document.getElementById('header-slot').innerHTML = await h.text(); document.getElementById('footer-slot').innerHTML = await f.text(); if (window.initACAS) window.initACAS(); } catch (e) { console.warn('Pour visualiser les composants communs, lancer le site via un serveur HTTP local.'); } })();
+    </script>
+</body>
+
+</html>
